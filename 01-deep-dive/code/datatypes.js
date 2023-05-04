@@ -60,8 +60,12 @@ console.log("'1' == 1", '1' == 1);
 console.log("'1' === 1", '1' === 1);
 
 // undefined und null - Abwesenheit eines Wertes
-const u1 = undefined; // nicht tun - gehört der engine
-const u2 = null;
+const u1 = undefined; // nicht tun - gehört der engine - uninitialisierte Variablen, uninitialisierte Parameter (leere), kein Rückgabewert
+const u2 = null; // häufig als Initialwert
+
+if (u1 === undefined) {
+  console.log('undefined');
+}
 
 // Symbol
 const s = Symbol('Klaus');
