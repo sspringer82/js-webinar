@@ -1,0 +1,15 @@
+{
+  "name": "01-deep-dive",
+  "version": "1.0.0",
+  "description": "my fance deep dive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sebastian Springer <sebastian.springer@maibornwolff.de>",
+  "license": "ISC",
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  }
+}
