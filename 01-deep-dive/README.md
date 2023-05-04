@@ -17,9 +17,26 @@
   - pnPm: https://pnpm.io/ 
 - https://npmtrends.com/    
 - Lizenzspaß: https://choosealicense.com/
+- Bundler:
+  - https://webpack.js.org/
+  - https://rollupjs.org/
+  - https://esbuild.github.io/
+  - https://parceljs.org/
+  - https://turbo.build/pack
+  - https://swc.rs/
+- Coding Style
+  - https://github.com/airbnb/javascript
+  - https://standardjs.com/
+  - https://google.github.io/styleguide/jsguide.html
 
 # Setup frontend
 `npm create vite@latest frontend -- --template vanilla`
 `cd frontend` 
 `npm install`
 `npm run dev`
+
+# Initial structure
+- package.json: `npm init -y`
+- README.md
+- package-lock.json
+- .gitignore: `node_modules`
