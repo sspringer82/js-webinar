@@ -28,6 +28,7 @@
   - https://github.com/airbnb/javascript
   - https://standardjs.com/
   - https://google.github.io/styleguide/jsguide.html
+- Prettier (Code Formatter): https://prettier.io/
 
 # Setup frontend
 `npm create vite@latest frontend -- --template vanilla`
