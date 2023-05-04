@@ -29,6 +29,10 @@
   - https://standardjs.com/
   - https://google.github.io/styleguide/jsguide.html
 - Prettier (Code Formatter): https://prettier.io/
+- Immutability Libs:
+  - https://github.com/kolodny/immutability-helper
+  - https://github.com/immerjs/immer
+  - https://immutable-js.com/ 
 
 # Setup frontend
 `npm create vite@latest frontend -- --template vanilla`
