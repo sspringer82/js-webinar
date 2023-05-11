@@ -1,0 +1,13 @@
+{
+  "name": "02-async",
+  "version": "1.0.0",
+  "description": "- https://www.npmjs.com/package/json-server - https://expressjs.com/ - https://github.com/typicode/json-server/issues/253 (Kombination aus Express + JSON-Server) - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
