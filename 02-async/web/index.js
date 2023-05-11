@@ -1,9 +1,10 @@
+import jsonServer from 'json-server';
 import express from 'express';
 
 const app = express();
 
-app.get('/', (request, response) => {
-  response.json([{ id: 1, firstname: 'Klaus' }]);
-});
+app.use('/api', jsonServer.router('data.json'));
+
+app.use(express.static('public'));
 
 app.listen(8081);
