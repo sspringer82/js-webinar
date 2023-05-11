@@ -5,11 +5,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   allUsersData.forEach((user) => {
     const div = document.createElement('div');
     div.innerText = user.firstname + ' ' + user.lastname;
+    div.setAttribute('data-id', user.id);
 
     const button = document.createElement('button');
-    button.innerText = 'click me';
-    button.onclick = () => {
-      console.log('you clicked the button');
+    button.innerText = 'delete 🗑️';
+    button.onclick = async () => {
+      const repsonse = await fetch(
+        `http://localhost:8081/api/users/${user.id}`,
+        { method: 'DELETE' }
+      );
+      if (repsonse.ok) {
+        // lösch den datensatz im Frontend
+        document.querySelector('[data-id="' + user.id + '"]').remove();
+      }
     };
 
     div.appendChild(button);
