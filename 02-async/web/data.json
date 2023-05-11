@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Max",
+      "lastname": "Mustermann",
+      "birthdate": "1990-01-01",
+      "street": "Musterstraße 1",
+      "city": "Musterstadt",
+      "country": "Deutschland",
+      "zip": "12345"
+    },
+    {
+      "id": 2,
+      "firstname": "Maria",
+      "lastname": "Müller",
+      "birthdate": "1985-02-15",
+      "street": "Am Bach 2",
+      "city": "Köln",
+      "country": "Deutschland",
+      "zip": "50667"
+    },
+    {
+      "id": 3,
+      "firstname": "Hans",
+      "lastname": "Schmidt",
+      "birthdate": "1978-07-10",
+      "street": "Gartenstraße 5",
+      "city": "Berlin",
+      "country": "Deutschland",
+      "zip": "10115"
+    },
+    {
+      "id": 4,
+      "firstname": "Julia",
+      "lastname": "Weber",
+      "birthdate": "1995-05-20",
+      "street": "Hauptstraße 12",
+      "city": "München",
+      "country": "Deutschland",
+      "zip": "80331"
+    },
+    {
+      "id": 5,
+      "firstname": "Peter",
+      "lastname": "Schneider",
+      "birthdate": "1980-03-12",
+      "street": "Bismarckstraße 7",
+      "city": "Hamburg",
+      "country": "Deutschland",
+      "zip": "20095"
+    },
+    {
+      "id": 6,
+      "firstname": "Sophie",
+      "lastname": "Fischer",
+      "birthdate": "1992-11-30",
+      "street": "Bahnhofstraße 3",
+      "city": "Frankfurt",
+      "country": "Deutschland",
+      "zip": "60329"
+    },
+    {
+      "id": 7,
+      "firstname": "Mark",
+      "lastname": "Davis",
+      "birthdate": "1988-06-18",
+      "street": "Park Avenue 10",
+      "city": "New York",
+      "country": "USA",
+      "zip": "10022"
+    },
+    {
+      "id": 8,
+      "firstname": "Emma",
+      "lastname": "Johnson",
+      "birthdate": "1997-09-23",
+      "street": "Baker Street 221B",
+      "city": "London",
+      "country": "UK",
+      "zip": "NW1 6XE"
+    },
+    {
+      "id": 9,
+      "firstname": "Juan",
+      "lastname": "García",
+      "birthdate": "1982-12-04",
+      "street": "Calle Mayor 8",
+      "city": "Madrid",
+      "country": "Spanien",
+      "zip": "28013"
+    },
+    {
+      "id": 10,
+      "firstname": "Amélie",
+      "lastname": "Dubois",
+      "birthdate": "1994-06-27",
+      "street": "Rue de Rivoli 15",
+      "city": "Paris",
+      "country": "Frankreich",
+      "zip": "75001"
+    },
+    {
+      "id": 11,
+      "firstname": "Luca",
+      "lastname": "Bianchi",
+      "birthdate": "1987-03-02",
+      "street": "Via Roma 45",
+      "city": "Rom",
+      "country": "Italien",
+      "zip": "00100"
+    },
+    {
+      "id": 12,
+      "firstname": "Johan",
+      "lastname": "Andersen",
+      "birthdate": "1991-08-12",
+      "street": "Nørrebrogade 22",
+      "city": "Kopenhagen",
+      "country": "Dänemark",
+      "zip": "2200"
+    },
+    {
+      "id": 13,
+      "firstname": "Maria",
+      "lastname": "Garcia",
+      "birthdate": "1988-11-19",
+      "street": "Carrer de Balmes 12",
+      "city": "Barcelona",
+      "country": "Spanien",
+      "zip": "08007"
+    },
+    {
+      "id": 14,
+      "firstname": "Marta",
+      "lastname": "Kowalska",
+      "birthdate": "1993-04-28",
+      "street": "ul. Nowy Świat 21",
+      "city": "Warschau",
+      "country": "Polen",
+      "zip": "00-029"
+    },
+    {
+      "id": 15,
+      "firstname": "Andrei",
+      "lastname": "Ivanov",
+      "birthdate": "1984-09-17",
+      "street": "ул. Тверская, д. 3",
+      "city": "Moskau",
+      "country": "Russland",
+      "zip": "125009"
+    }
+  ]
+}

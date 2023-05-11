@@ -13,6 +13,13 @@ function doSomething(value, time = 100, isError = false) {
   });
 }
 
+function soSomethingDifferent(isError) {
+  if (isError) {
+    return Promise.reject('error');
+  }
+  return Promise.resolve('success');
+}
+
 const value = doSomething('my async value');
 console.log(value);
 
@@ -25,7 +32,7 @@ doSomething('myErrorValue', 100, true)
   });
 
 // Promise Kette
-doSomething('v1', 100, true) // file open
+doSomething('v1') // file open
   .then((v1) => {
     console.log(v1);
     return doSomething('v2'); // file read
@@ -40,4 +47,31 @@ doSomething('v1', 100, true) // file open
   .catch((error) => {
     console.error('an error happened');
     console.error(error);
+  })
+  .finally(() => {
+    console.log('cleanup');
   });
+
+const returnedPromise = doSomething('do sth');
+
+// mehrfach auf 1 promise registrieren ist möglich
+returnedPromise.then((value) => {
+  console.log('returned p: ', value);
+});
+returnedPromise.then((value) => {
+  console.log('returned p2: ', value);
+});
+
+// später auf eine schon gesetteltes promise registrieren
+setTimeout(() => {
+  returnedPromise.then((value) => {
+    console.log('delayed p3: ', value);
+  });
+}, 200);
+
+// ACHTUNG ANTIPATTERN AHEAD - Promise callback Hell - ineinander geschachtelte then vermeiden
+doSomething('v').then((v1) => {
+  doSomething('v2').then((v2) => {
+    console.log('v2: ', v2);
+  });
+});
