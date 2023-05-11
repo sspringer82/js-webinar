@@ -4,6 +4,7 @@
 - https://expressjs.com/
 - https://github.com/typicode/json-server/issues/253 (Kombination aus Express + JSON-Server)
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+- https://web.dev/critical-rendering-path-render-tree-construction/
 
 # Node Server
 Im Verzeichnis web:

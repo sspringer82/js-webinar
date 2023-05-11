@@ -7,4 +7,7 @@ app.use('/api', jsonServer.router('data.json'));
 
 app.use(express.static('public'));
 
-app.listen(8081);
+const port = 8081;
+app.listen(port, () =>
+  console.log(`Server is ready at http://localhost:${port}`)
+);

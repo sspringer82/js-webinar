@@ -1,21 +1,18 @@
-const search = 'ohns';
+document.addEventListener('DOMContentLoaded', async () => {
+  const allUsersResponse = await fetch('http://localhost:8081/api/users');
+  const allUsersData = await allUsersResponse.json();
 
-// (async () => {
-// alle user laden
-const allUsersResponse = await fetch('http://localhost:8081/api/users');
-const allUsersData = await allUsersResponse.json();
+  allUsersData.forEach((user) => {
+    const div = document.createElement('div');
+    div.innerText = user.firstname + ' ' + user.lastname;
 
-// einen user finden
-const foundUser = allUsersData.find((user) =>
-  user.lastname.toLowerCase().includes(search.toLowerCase())
-);
+    const button = document.createElement('button');
+    button.innerText = 'click me';
+    button.onclick = () => {
+      console.log('you clicked the button');
+    };
 
-// details laden
-const userDetailsRequest = await fetch(
-  'http://localhost:8081/api/users/' + foundUser.id
-);
-const userDetailsData = await userDetailsRequest.json();
-
-// ausgabe
-console.log('Results for "ohns"', userDetailsData);
-// })();
+    div.appendChild(button);
+    document.querySelector('body').appendChild(div);
+  });
+});
