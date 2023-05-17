@@ -33,5 +33,30 @@ describe('Calculator', () => {
       const result = calc.sub(4, 2);
       expect(result).toBe(2);
     });
+
+    it('should throw an error if 1st param is a string', () => {
+      const testingFn = () => calc.sub('1', 2);
+      expect(testingFn).toThrow();
+      expect(testingFn).toThrow('Not a number');
+    });
+
+    it('should throw an error if 2nd params is a string', () => {
+      const testingFn = () => calc.sub(1, '2');
+      expect(testingFn).toThrow();
+    });
+
+    it('should throw an error if both params are strings', () => {
+      const testingFn = () => calc.sub('1', '2');
+      expect(testingFn).toThrow();
+    });
+
+    it('should throw an error if there are strings', () => {
+      const testingFn1 = () => calc.sub(1, '2');
+      expect(testingFn1).toThrow();
+      const testingFn2 = () => calc.sub('1', 2);
+      expect(testingFn2).toThrow();
+      const testingFn3 = () => calc.sub('1', '2');
+      expect(testingFn3).toThrow();
+    });
   });
 });
