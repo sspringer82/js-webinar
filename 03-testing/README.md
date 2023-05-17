@@ -15,6 +15,7 @@
   - https://www.chaijs.com/
   - https://nodejs.org/dist/latest-v20.x/docs/api/assert.html
 - Code Katas: http://codekata.com/
+- Test Utilities: https://sinonjs.org/
 
 # Jest
 - Sucht nach Dateien mit der Endung *.(spec|test).(ts|js)
