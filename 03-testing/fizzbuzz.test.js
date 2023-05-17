@@ -34,7 +34,7 @@ const table = [
 ];
 
 describe('fizzbuzz', () => {
-  it.each(table)('if %i is provided return %s', ({ input, expected }) => {
+  it.each(table)('if %i is provided return %s', (input, expected) => {
     const result = fizzBuzz(input);
     expect(result).toBe(expected);
   });
