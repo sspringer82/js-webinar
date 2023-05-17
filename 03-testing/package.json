@@ -4,7 +4,9 @@
   "description": "Heute geht's um JavaScript Testing",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "npm test -- --coverage"
   },
   "keywords": [],
   "author": "",

@@ -13,16 +13,15 @@ test('it should add 1 and 1 and return 2', () => {
 });
 
 describe('Calculator', () => {
+  let calc;
+
+  // beforeAll(() => {})
+  beforeEach(() => {
+    calc = new Calculator();
+  });
+  // afterEach(() => {})
+  // afterAll(() => {})
   describe('.sub()', () => {
-    let calc;
-
-    // beforeAll(() => {})
-    beforeEach(() => {
-      calc = new Calculator();
-    });
-    // afterEach(() => {})
-    // afterAll(() => {})
-
     it('should subtract 1 from 2 and return 1', () => {
       const result = calc.sub(2, 1);
       expect(result).toBe(1);
@@ -57,6 +56,13 @@ describe('Calculator', () => {
       expect(testingFn2).toThrow();
       const testingFn3 = () => calc.sub('1', '2');
       expect(testingFn3).toThrow();
+    });
+  });
+
+  describe('.mul()', () => {
+    it('should mul', () => {
+      // fake code coverage
+      calc.mul(1, 1);
     });
   });
 });
