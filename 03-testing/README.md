@@ -18,3 +18,4 @@
 # Jest
 - Sucht nach Dateien mit der Endung *.(spec|test).(ts|js)
 - Matcher: https://jestjs.io/docs/using-matchers
+- Reporters: https://jestjs.io/docs/configuration#reporters-arraymodulename--modulename-options
