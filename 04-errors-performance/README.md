@@ -32,6 +32,8 @@
   - https://parceljs.org/
   - https://turbo.build/pack
   - https://swc.rs/
+- https://pm2.keymetrics.io/
+- https://developer.mozilla.org/en-US/docs/Web/API/Worker
 
 # JS Verarbeitung
 1. Datei einlesen

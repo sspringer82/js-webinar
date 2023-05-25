@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module">
+      import { encoder, decodePayload, clear } from './util.js';
+
+      const arr = new Uint8Array(
+        new SharedArrayBuffer(Uint8Array.BYTES_PER_ELEMENT * 1000)
+      );
+
+      const obj = {
+        operands: [
+          Math.floor(Math.random() * 10),
+          Math.floor(Math.random() * 10),
+        ],
+        result: null,
+      };
+
+      const encoded = encoder.encode(JSON.stringify(obj));
+
+      arr.set(encoded, 0);
+
+      const worker = new Worker('./worker.js', { type: 'module' });
+
+      worker.postMessage(arr);
+
+      worker.onmessage = () => {
+        const data = decodePayload(arr);
+
+        console.log(
+          `${data.operands[0]} + ${data.operands[1]} = ${data.result}`
+        );
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

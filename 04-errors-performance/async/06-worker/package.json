@@ -1,0 +1,16 @@
+{
+  "name": "11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "worker.js",
+  "scripts": {
+    "start": "http-server --cors ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "type": "module"
+}
