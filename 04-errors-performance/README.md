@@ -32,3 +32,11 @@
   - CDN (Content delivery network): räumliche Nähe der Ressourcen zu den Usern
   - Serverseitiges Caching
   - Response verkleinern (Content Download optimieren) - Komprimierung
+
+# Node debugger
+- https://nodejs.org/dist/latest-v20.x/docs/api/debugger.html
+- `node --inspect index.js` Debugger aktivieren (app läuft direkt los)
+- `node --inspect-brk index.js`  Debugger mit break on first line
+  - Chrome öffnen (chrome://inspect)
+  - Remote Target => inspect
+  - Happy debugging
