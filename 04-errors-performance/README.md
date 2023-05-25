@@ -16,6 +16,22 @@
 - Chrome Dev Tools: https://developer.chrome.com/docs/devtools/
 - Lighthouse (Analyse): https://www.npmjs.com/package/lighthouse
   - https://developer.chrome.com/docs/lighthouse/
+- https://eslint.org/ 
+  - Unicorn Plugin: https://github.com/sindresorhus/eslint-plugin-unicorn
+- Styleguides
+  - https://github.com/airbnb/javascript
+  - https://github.com/standard/standard
+  - https://github.com/google/eslint-config-google
+  - https://github.com/xojs/eslint-config-xo
+- code formatting: https://prettier.io/
+- Bundler:
+  - https://webpack.js.org/
+  - https://vitejs.dev/ - rundum sorglos für neue Projekte (Standardbundler: Rollup)
+  - https://rollupjs.org/
+  - https://esbuild.github.io/
+  - https://parceljs.org/
+  - https://turbo.build/pack
+  - https://swc.rs/
 
 # JS Verarbeitung
 1. Datei einlesen
