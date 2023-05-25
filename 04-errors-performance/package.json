@@ -1,0 +1,16 @@
+{
+  "name": "04-errors-performance",
+  "version": "1.0.0",
+  "description": "# Links - https://developer.mozilla.org/ - https://web.dev/critical-rendering-path-render-tree-construction/",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server devtools"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
