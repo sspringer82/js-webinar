@@ -9,6 +9,10 @@
 - https://typestrong.org/ts-node/
 - https://vitejs.dev/
 - Datentypen: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures?retiredLocale=de
+- Utility Types: https://www.typescriptlang.org/docs/handbook/utility-types.html
+- Debugging
+  - https://code.visualstudio.com/docs/typescript/typescript-debugging
+  - https://www.jetbrains.com/help/webstorm/running-and-debugging-typescript.html
 
 ## Setup
 - TypeScript installieren: `npm add -D typescript`
