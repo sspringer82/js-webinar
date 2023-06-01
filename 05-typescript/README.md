@@ -13,6 +13,7 @@
 - Debugging
   - https://code.visualstudio.com/docs/typescript/typescript-debugging
   - https://www.jetbrains.com/help/webstorm/running-and-debugging-typescript.html
+- https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ## Setup
 - TypeScript installieren: `npm add -D typescript`
